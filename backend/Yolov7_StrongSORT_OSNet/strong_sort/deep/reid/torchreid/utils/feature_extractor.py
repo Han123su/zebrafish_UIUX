@@ -4,10 +4,15 @@ import torch
 import torchvision.transforms as T
 from PIL import Image
 
-from .torchreid.utils import (
-    check_isfile, load_pretrained_weights, compute_model_complexity
-)
-from .torchreid.models import build_model
+#from torchreid.utils import (
+#    check_isfile, load_pretrained_weights, compute_model_complexity
+#)
+
+from .torchtools import load_pretrained_weights
+from .tools import check_isfile
+import .model_complexity import compute_model_complexity
+
+from torchreid.models import build_model
 
 
 class FeatureExtractor(object):
