@@ -10,10 +10,9 @@ from PIL import Image
 
 from .torchtools import load_pretrained_weights
 from .tools import check_isfile
-import .model_complexity import compute_model_complexity
+from .model_complexity import compute_model_complexity
 
 from torchreid.models import build_model
-
 
 class FeatureExtractor(object):
     """A simple API for feature extraction.
